@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="nome-completo" id="nome-completo" placeholder="Digite seu nome">
+    <input type="button" value="Mostrar nome" id="btn-exibir-nome">
+    <input type="button" value="Contar caracteres" id="btn-contar-caracteres">
+
+    <script type="text/javascript">
+        document.getElementById("btn-exibir-nome").addEventListener("click", function() {
+            const nomeCompleto = document.getElementById("nome-completo").value
+            alert('O seu nome é ' + nomeCompleto)
+        })
+
+        document.getElementById("btn-contar-caracteres").addEventListener("click", function() {
+            let nome = document.getElementById("nome-completo").value
+            alert(nome.length + " caracteres")
+        })
+    </script>
+</body>
+</html>
